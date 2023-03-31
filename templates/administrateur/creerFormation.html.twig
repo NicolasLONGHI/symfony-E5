@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'form_table_layout.html.twig' %}
+
+{% block body %}
+    <center>
+        <h1>Ajouter une formation</h1>
+        <br/><br/>
+        {{ form(form) }}
+        <br/><br/>
+        <a type="button" class="btn btn-secondary" href="{{path('app_interfacePrincipaleAdmin')}}">Retour</a>
+    </center>
+{% endblock %}
